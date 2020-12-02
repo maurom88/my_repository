@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/script.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>My first page</title>
 </head>
-<body>
+<body onload="changeStyle()">
     <header class="header">
         <h1 id="main-title">My first page</h1>
     </header>
@@ -26,9 +27,11 @@
                 <p class="paragraph">In this other paragraph I will add some more information on the same topic, but not essentil to understand it.</p>
             </aside>
             <img src="https://picsum.photos/200" />
+            <button onclick="copyTitle()">Copy title</button>
         </section>
     </main>
     <footer class="footer">
+        <h1 id="second-title"></h1>
         <p class="paragraph">Visit the other pages of the website</p>
         <nav>
             <a href="./index.html">Home page</a>
